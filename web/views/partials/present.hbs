@@ -1,0 +1,63 @@
+<div id="presence-container" class="box has-background-grey-lighter">
+    <h3 class="title is-4 has-text-centered">Who's Phone is Home?</h3>
+    
+    <!-- Flexbox container for names, centered with more spacing -->
+    <div class="is-flex is-justify-content-center is-align-items-center">
+        <!-- Mam -->
+        <div class="mr-6">
+            <span class="has-text-weight-bold">Mam:</span>
+            {{#with (lookup presenceData "Mam's Phone")}}
+                <!-- Presence Circle -->
+                <span class="ml-2 tag is-rounded {{#if present}}is-success{{else}}is-danger{{/if}}" 
+                      style="width: 12px; height: 12px; display: inline-block; border-radius: 50%;"></span>
+            {{else}}
+                <!-- Default Red Circle if no presence data found -->
+                <span class="ml-2 tag is-rounded is-danger" 
+                      style="width: 12px; height: 12px; display: inline-block; border-radius: 50%;"></span>
+            {{/with}}
+        </div>
+
+        <!-- Dad -->
+        <div class="mr-6">
+            <span class="has-text-weight-bold">Dad:</span>
+            {{#with (lookup presenceData "Dad's Phone")}}
+                <!-- Presence Circle -->
+                <span class="ml-2 tag is-rounded {{#if present}}is-success{{else}}is-danger{{/if}}" 
+                      style="width: 12px; height: 12px; display: inline-block; border-radius: 50%;"></span>
+            {{else}}
+                <!-- Default Red Circle if no presence data found -->
+                <span class="ml-2 tag is-rounded is-danger" 
+                      style="width: 12px; height: 12px; display: inline-block; border-radius: 50%;"></span>
+            {{/with}}
+        </div>
+
+        <!-- Cian -->
+        <div class="mr-6">
+            <span class="has-text-weight-bold">Cian:</span>
+            {{#with (lookup presenceData "Cian's Phone")}}
+                <!-- Presence Circle -->
+                <span class="ml-2 tag is-rounded {{#if present}}is-success{{else}}is-danger{{/if}}" 
+                      style="width: 12px; height: 12px; display: inline-block; border-radius: 50%;"></span>
+            {{else}}
+                <!-- Default Red Circle if no presence data found -->
+                <span class="ml-2 tag is-rounded is-danger" 
+                      style="width: 12px; height: 12px; display: inline-block; border-radius: 50%;"></span>
+            {{/with}}
+        </div>
+
+        <!-- Oisín -->
+        <div>
+            <span class="has-text-weight-bold">Oisín:</span>
+            {{#with (lookup presenceData "Oisín's Phone")}}
+                <!-- Presence Circle -->
+                <span class="ml-2 tag is-rounded {{#if present}}is-success{{else}}is-danger{{/if}}" 
+                      style="width: 12px; height: 12px; display: inline-block; border-radius: 50%;"></span>
+            {{else}}
+                <!-- Default Red Circle if no presence data found -->
+                <span class="ml-2 tag is-rounded is-danger" 
+                      style="width: 12px; height: 12px; display: inline-block; border-radius: 50%;"></span>
+            {{/with}}
+        </div>
+    </div>
+
+</div>

@@ -4,6 +4,10 @@ import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
 import { engine } from "express-handlebars";
 import { router } from "./routes.js";
+import { create } from 'express-handlebars';
+import exphbs from 'express-handlebars';
+import './utils/handlebarsHelpers.js';
+
 
 const app = express();
 app.use(cookieParser());

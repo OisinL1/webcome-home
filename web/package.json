@@ -5,36 +5,36 @@
     "main": "server.js",
     "type": "module",
     "scripts": {
-      "start": "node server.js"
+        "start": "node server.js"
     },
     "dependencies": {
-      "body-parser": "^1.20.2",
-      "cookie-parser": "^1.4.6",
-      "express": "^4.18.2",
-      "express-fileupload": "^1.4.0",
-      "express-handlebars": "^6.0.7",
-      "fs-extra": "^11.1.0",
-      "lowdb": "^5.1.0",
-      "uuid": "^9.0.0"
+        "body-parser": "^1.20.2",
+        "cookie-parser": "^1.4.6",
+        "express": "^4.18.2",
+        "express-fileupload": "^1.4.0",
+        "express-handlebars": "^6.0.7",
+        "fs-extra": "^11.1.0",
+        "lowdb": "^5.1.0",
+        "mqtt": "^5.10.3",
+        "uuid": "^9.0.0"
     },
     "repository": {
-      "url": "https://github.com/OisinL1/webcome-home.git"
+        "url": "https://github.com/OisinL1/webcome-home.git"
     },
     "license": "MIT",
     "keywords": [
-      "node",
-      "glitch",
-      "express"
+        "node",
+        "glitch",
+        "express"
     ],
     "engines": {
-      "node": "16.x.x"
+        "node": "16.x.x"
     },
     "prettier": {
-      "singleQuote": false,
-      "printWidth": 120
+        "singleQuote": false,
+        "printWidth": 120
     },
     "devDependencies": {
-      "prettier": "^2.8.4"
+        "prettier": "^2.8.4"
     }
-  }
-  
+}
