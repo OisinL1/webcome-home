@@ -1,9 +1,5 @@
-import handlebars from 'handlebars';
+import Handlebars from 'handlebars';
 
-// Register a helper to check if an object or array is empty
-handlebars.registerHelper('isEmpty', function (value) {
-    return (
-        (Array.isArray(value) && value.length === 0) ||
-        (typeof value === 'object' && Object.keys(value).length === 0)
-    );
+Handlebars.registerHelper('eq', function (a, b) {
+    return a === b;
 });
