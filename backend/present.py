@@ -95,7 +95,7 @@ if __name__ == "__main__":
         while True:
             blynk.run()
             update_blynk_and_mqtt()
-            time.sleep(300) 
+            time.sleep(3000) 
     except KeyboardInterrupt:
         print("Script stopped by user.")
     finally:
